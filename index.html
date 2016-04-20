@@ -101,7 +101,21 @@
   </div>
 
   <script>
-    // JavaScript here...
+    function updateCounters() {
+      var todoCounter = document.getElementById('todo-count');
+      var totalTodos = document.getElementsByClassName("todo").length;
+      todoCounter.innerHTML = totalTodos;
+
+      var completedCout = getElementById('completed-count');
+      var completedTodos = getElementsByClassName('completed').length;
+      completedCout.innerHTML = completedTodos;
+
+      var todoCount = document.getElementById('todo-count');
+      var uncompletedTodos = totalTodos - completedTodos;
+      todoCount.innerHTML = uncompletedTodos;
+    }
+
+    updateCounters();
   </script>
 </body>
 </html>
