@@ -101,7 +101,9 @@
   </div>
 
   <script>
-    // JavaScript here...
+      var todoCounter = document.getElementById('todo-count');
+      var totalTodos = document.getElementsByClassName("todo").length;
+      todoCounter.innerHTML = totalTodos;
   </script>
 </body>
 </html>
